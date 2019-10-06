@@ -235,7 +235,8 @@ Deve conter uma descrição geral, indicando a possível distância entre os pon
 \section{Planta Lógica - Elementos estruturados}
 
 \subsection{Estado atual}
-Deve ter a planta atual, se for o caso
+
+\ref{planta-atual}
 
 \subsection{Topologia}
 Proposta futura, proposta após implantação.
@@ -344,9 +345,13 @@ Você também pode modificar a tabela manualmente, incluindo, por exemplo h! den
 
 \subsection{Figuras}
 
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
+\begin{figure}
+	\centering
+	\includegraphics[width=25cm,keepaspectratio,angle=-90]{planta-atual}
+	\caption{Planta Atual}
+	\label{planta-atual}
+\end{figure}
 
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
 
 \begin{figure}
 \centering
