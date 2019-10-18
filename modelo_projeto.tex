@@ -10,7 +10,8 @@
 							fontsize=12pt,%
 							onecolumn]{scrartcl}	 					% KOMA-article class
 
-\usepackage{lipsum}													% Package to create dummy text
+\usepackage{lipsum}		
+\usepackage{lscape}											% Package to create dummy text
 \usepackage[brazil]{babel}										% English language/hyphenation
 \usepackage[protrusion=true,expansion=true]{microtype}				% Better typography
 \usepackage{amsmath,amsfonts,amsthm}					% Math packages
@@ -185,13 +186,15 @@ No projeto haverá apenas uma empresa envolvida, a empresa Crachá Digital. Port
 
 
 \section{Estado atual}
-Aprente o estado atual da rede. Caso não tenha rede, desconsiderar esta seção.
+As características da rede atual, seus passivos e uma breve avaliação por parte dos usuários da rede.
 
-Caso tenha rede, deixe claro:
 \begin{itemize}
-	\item os passivos de rede atuais:path panels, cabos, etc..;
-	\item as principais reclamações dos usuários. Qual o principal motivo da reestruturação? Efetue uma pesquisa junto aos colaboradores para determinar quais problemas a rede apresenta.
-	\item Observações. Analise a rede e verifique se há estruturas que não se enquadram nas normas ou que indicam suspeita de problemas.
+	\item Os passivos da rede: a estrutura conta com uma mini Rack de parede acoplada na sala de servidores (Figura 1). Há cabos de rede no forro das instalações interligando os equipamentos e o switch. Também há pequenas calhas de plástico para acabamento dos cabos de UTP nas paredes;
+	
+	\item As principais reclamações dos usuários: falta de suporte a tecnologias que demandam maior fluxo de dados, como videoconferências e acesso a desktop remoto. Isso se deve pelo fato da rede atual ser apenas Mbit.
+	
+	\item Observações: Há seções na rede que requerem cobertura completa de cabos, pois a construção conta com salas externas que não tem cobertura entre a seção principal e algumas seções periféricas. A não cobertura dos cabos faz com que o cabo sofra erosão por chuva e deterioração por insolação;
+	
 \end{itemize}
 
 \section{Requisitos}
@@ -238,7 +241,9 @@ Deve conter uma descrição geral, indicando a possível distância entre os pon
 
 \subsection{Estado atual}
 
+\begin{landscape}
 \ref{planta-atual}
+\end{landscape}
 
 \subsection{Topologia}
 Proposta futura, proposta após implantação.
@@ -349,7 +354,7 @@ Você também pode modificar a tabela manualmente, incluindo, por exemplo h! den
 
 \begin{figure}
 	\centering
-	\includegraphics[width=25cm,keepaspectratio,angle=-90]{planta-atual}
+	\includegraphics[width=\textwidth]{planta-atual}
 	\caption{Planta Atual}
 	\label{planta-atual}
 \end{figure}
