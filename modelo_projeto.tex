@@ -9,7 +9,7 @@
 							paper=a4,%
 							fontsize=12pt,%
 							onecolumn]{scrartcl}	 					% KOMA-article class
-
+							
 \usepackage{lipsum}		
 \usepackage{lscape}											% Package to create dummy text
 \usepackage[brazil]{babel}										% English language/hyphenation
@@ -29,8 +29,6 @@
 	\renewcommand\tablename{Tabela}
 	\renewcommand\figurename{Figura}
 } 
- 
-
  
 %%% Custom sectioning (sectsty package)
 \usepackage{sectsty}													% Custom sectioning (see below)
@@ -210,6 +208,15 @@ As características da rede atual, seus passivos e uma breve avaliação por par
 	\item A administração do cabeamento deve respeitar a norma ANSI/TIA/EIA-606;
 \end{enumerate}
 
+A área de trabalho ou WA (Work Area) é o ambiente onde os serviços de telecomunicação serão oferecidos aos usuários, ou seja, é nele que serão instalados e
+conectados os equipamentos que atendem aos usuários \cite{senai2012}.
+
+A ANSI/EIA/TIA 569 B.2 e a NBR 14.565:2007 recomendam que cada área de
+trabalho possua 10m2 de área e um mínimo de 2 tomadas de telecomunicações,
+sendo que uma delas deverá ser atendida por cabo UTP ou F/UTP Cat 5e ou superior, e a outra, por cabos UTP, F/UTP. As normas também recomendam utilizar
+fibra ótica monomodo ou multímodo de 50-125$\mu$m ou 65-125$\mu$m, terminando em conectores RJ45 ou conectores para cabos ópticos ST, SC ou LC Duplex \cite{senai2012}.
+
+
 \section{Usuários e Aplicativos}
 A seguir será apresentada uma relação de possíveis usuários, seu número estimado e aplicativos executados em alguns equipamentos na infraestrutura. 
  
@@ -323,18 +330,9 @@ Crie uma relação de orçamentos baseado na seções anteriores.
 Observações e recomendações para o cliente.
 
 \section{Referências bibliográficas}
-Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
-
-Exemplo: Redes de computadores, segundo \cite{t2013} é considerada..... Já \cite{kurose2010} apresenta uma versão...
-
-\cite{marin2014cabeamento}
-exemplo senai \cite{senai2012}
-
-Analisando os pressupostos de \cite{ref3} e \cite{ref4} concluimos que....
-
 
 \renewcommand\refname{} %%Referências bibliográficas}  
-\bibliographystyle{ieeetr}
+\bibliographystyle{apalike}
 \bibliography{referencias}  
 
 %% ***********************************************************************
