@@ -275,6 +275,17 @@ Pegando como base a planta física (Figura \ref{planta-atual}), esboçamos sobre
 
 \subsection{Topologia}
 
+Segundo \cite{senai2012} "O cabeamento estruturado adotou como padrão a topologia estrela, em que
+cada tomada de telecomunicação localizada junto ao usuário, deverá estar ligada
+a um ponto central que fará a comunicação com a rede de computadores interna
+da empresa e à Internet".
+
+Na topologia da Figura \ref{topologia} cada retângulo representa uma sala (Work Area) da planta original. 
+Tratando-se de uma topologia estrela, todas as terminações da rede estão advindo da "sala de controle", centralizada na imagem (Figura \ref{topologia}). Que conta com dois Switches (Switch e Switch(1)). Nas salas de "Financeiro", "Reunião" e "Desenvolvimento" há sub-redes de topologia estrela através de um roteador (exemplo: WR$\_$Atendimento).
+
+Algumas terminações foram conectadas através de um IP Phone, como no "IP Phone Financeiro". Esses equipamentos disponibilizam duas portas Ethernet, uma para o switch e outra para um terminal (exemplo: PC), fazendo com que não seja necessário um cabeamento individual para esses dois equipamentos desde o switch. 
+
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{nova-topologia}
