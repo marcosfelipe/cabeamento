@@ -46,6 +46,7 @@
 \usepackage{fancyhdr}												% Needed to define custom headers/footers
 	\pagestyle{fancy}														% Enabling the custom headers/footers
 \usepackage{lastpage}	
+\usepackage{float}
 
 % Header (empty)
 \lhead{}
@@ -253,7 +254,7 @@ A planta (Figura \ref{planta-atual}) representa a construção atual. A constru�
 
 Há também uma área externa, desprendida da construção principal, a sala de manutenção. Esta área requer cuidado especial, pois a passagem de cabeamento deve ser protegida do ambiente externo.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{planta-atual}
 	\caption{Planta Atual}
@@ -265,7 +266,7 @@ Há também uma área externa, desprendida da construção principal, a sala de 
 \subsection{Estado atual}
 Pegando como base a planta física (Figura \ref{planta-atual}), esboçamos sobre ela a estrutura lógica (Figura \ref{planta-logica-atual}), dos componentes da rede e o caminho percorrido pelos cabos.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{planta-logica-atual}
 	\caption{Planta Lógica Atual}
@@ -273,6 +274,16 @@ Pegando como base a planta física (Figura \ref{planta-atual}), esboçamos sobre
 \end{figure}
 
 \subsection{Topologia}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{nova-topologia}
+	\caption{Topologia}
+	\label{topologia}
+\end{figure}
+
+
+
 Proposta futura, proposta após implantação.
 Deve conter o diagrama da rede. Atente-se a redundância  e ligações truncadas.
 Deve explicar todos termos e componentes utilizados nestas plantas. Por exemplo: entrance facility, work area, horizontal cabling, etc..
