@@ -364,10 +364,42 @@ http://www.ganttproject.biz/,
 http://www.orangescrum.org/. 
 
 \section{Plano de certificação}
-Quais seriam as etapas para a certificação? 
-Quais os locais e horários para execução da certificação na rede? Toda rede será certificada?
-Como os testes seriam executados?
-Quais relatórios de certificação serão (ou deveriam ser) entregues? 
+
+Após a implantação do projeto deve ser feita a certificação do sistema de cabeamento estruturado, a verificação dos passivos, como cabos e conectores, da rede se condizem com as normas de cabeamento estruturado. 
+
+Este processo garante que o trabalho realizado de instalação está seguindo critérios e padrões que asseguram desempenho e qualidade do cabeamento. Para efetuar a certificação é necessário um equipamento especial que executará diversas medidas precisas acerca da funcionalidade e desempenho dos cabos.
+
+Conforme Senai, a certificação de cabeamento estruturado tem como objetivo  aferir os seguintes parâmetros:
+\begin{itemize}
+	\item Paradiafonia (NEXT, Near End Crosstalk);
+	\item Perda de retorno e inserção (atenuação);
+	\item Atraso de propagação;
+	\item Desvio de atraso de propagação (Delay Skew);
+	\item PS-NEXT (Power Sum NEXT);
+	\item PS-ELFEXT (Power Sum ELFEXT);
+	\item Relação atenuação/paradiafonia (ACR – Attenuation to Crosstalk Ratio);
+	\item Entre outros \cite{senai2012};
+\end{itemize}
+
+A certificação de rede deve ser feita fora do horário de expediente, entre 18h e 6h da manhã. Desta forma terá a disposição todas as tomadas das áreas de trabalho e patch cords para desconexão, conexão e reparo quando necessário.
+
+A certificação da estrutura deve ser iniciada na sala de telecomunicações. Com o equipamento de certificação devidamente calibrado, deve-se espetar o patch cord no certificador, a seguir, em todas as áreas de trabalho o equipamento remoto deve ser plugado usando um cabo Ethernet de no máximo 5 metros na tomada de rede.
+
+Os parâmetros de testes de par trançado são importantes para verificar fatores que possam obstruir a rede, como o comprimento do cabo, conexão correta, entre outros. Os seguintes testes de cabeamento de par trançado devem ser executados: 
+
+\begin{itemize}
+	\item Mapa de fios (Wire Map): Verifica a correta conexão de cada um dos quatro pares, analisando cada um dos oito condutores, se contemplam a configuração 568A ou	568B. O mapa de fios verifica os seguintes itens: continuidade pino a pino, curto-circuito, pares transpostos, pares divididos, condutores abertos e pares invertidos;
+	\item Comprimento do cabo: Através da técnica TDR (reflectometria no domínio de tempo) o aparelho envia um pulso elétrico e cronometra o tempo de retorno do pulso entre uma extremidade e outra, a fim de averiguar se a extensão do cabo está condizente com o padrão EIA/TIA 568;
+	\item Perda de Inserção (Insertion Loss): diz respeito a atenuação que um sinal sofre durante sua propagação, ela é medida em dB por unidade de comprimento. Essa atenuação se deve pelo fato dos cabos metálicos sofrerem perdas de resistência dos condutores ao longo do filamento;
+	\item Diafonia (Crosstalk): refere-se ao nível de interferência eletromagnética entre os pares de condutores de um mesmo cabo, medida em dB. A diafonia não é possível eliminar completamente, mas é possível se chegar a níveis aceitáveis, para isso alguns procedimento podem ser feitos para se chegar a resultados respeitáveis como: perfeita conectorização dos cabos, perfeita conectorização dos patch panels e utilização de cabos e conectores de qualidade. A diafonia se subdivide em paradiafonia (NEXT) e telediafonia (FEXT). O NEXT (Near end Crosstalk) mostra a diafonia ocorrida próxima a conexão do cabo em que a medição está sendo efetuada. Já o PSNEXT (Power sum NEXT) considera a influência de todos os pares de cabo sobre o par que está sendo medido. O FEXT (Far end Crosstalk) é a interferência medida próximo ao
+	receptor, ou seja, distante (far) do transmissor. Dentro do FEXT há outra subdivisão em: ELNEXT (atenuação), PSELFEXT (Soma do ELFEXT sobre outros pares de cabo) e PSFEXT (somatória de interferência longe do ponto de medição);
+	\item Perda de Retorno: registra a perda de retorno de energia devido às variações de impedância no sistema de cabeamento. Essa perda de retorno é um indicador sobre a qualidade das terminações dos pares de um cabo nas tomadas de telecomunicação;
+	\item Atraso de Propagação: está relacionado com o tempo gasto para o sinal percorrer o cabo de uma ponto à outra. Esse atraso tem relação com as características primárias do cabo como: resistência, indutância, capacitância e condutância. Dentro dessa categoria de teste existe também o atraso de propagação relativo (Skew Delay) que é a diferença no tempo que leva o sinal para se propagar pelos condutores no mesmo cabo, isso devido a diferença de comprimento entre os pares de fios torcidos;
+	\item Allien Crosstalk: é a interferência de diafonia entre pares de cabos diferentes, isso é possível quando há um agrupamento de muitos cabos, em eletrodutos, eletrocalhas, entre outros. Para minimizar a interferência é recomendado para cada feixe de cabos no máximo 6 cabos;
+\end{itemize}
+
+Após os testes executados no certificador, o técnico deve conectar o equipamento num computador e exportar os resultados em PDF e entregar ao cliente. Nos relatórios analíticos são previstos gráficos e tabelas de todos os testes mencionados anteriormente. Nas análises são constados os níveis atuais de cada teste e um paralelo com níveis toleráveis pelas normas de cabeamento estruturado. Bem como, o resultado do teste para cada parâmetro, se foi aprovado ou não.
+
 
 \section{Plano de manutenção}
 
