@@ -298,7 +298,7 @@ Algumas terminações foram conectadas através de um IP Phone, como no "IP Phon
 
 Entre os elementos fixos na rede está também a câmera de segurança (Cam$\_$Seguranca), ela está conectada diretamente no switch principal e deverá ter o IP fixado. Os elementos móveis na rede, "Laptop Cliente1" e "Smartphone Prop1" deverão se conectar através das subredes das respectivas áreas de trabalho, mas podendo também transitar entre outras áreas como "Desenvolvimento" e "Atendimento".
 
------
+A seguir será mostrado o esboço da rack (Figura \ref{diagrama-do-rack}) presente na sala de telecomunicações. O diagrama mostra os equipamentos necessários para o estabelecimento de comércio operar. Tendo como necessidades: VOIP, servidor de arquivos, servidor Proxy, Nobreak etc.
 
 \begin{figure}[H]
 	\centering
@@ -307,11 +307,11 @@ Entre os elementos fixos na rede está também a câmera de segurança (Cam$\_$S
 	\label{diagrama-do-rack}
 \end{figure}
 
+No projeto foram incluídos dois Patch Panels de 24 portas. Abaixo de cada Patch Panel existe um duto horizontal para organizar os cabos do Patch Panel para o Switch. O segundo patch panel poderá ser usado exclusivamente para conectar telefones IP, considerando-se como sendo uma boa prática. E então conectá-los ao segundo switch para telefonia de serviço PABX. Foram incluídos também, dois servidores para virtualização, esses servidores podem acomodar, dependendo da demanda, serviços como: VOIP, Proxy, DHCP, E-mail, Web etc.
 
+Mais abaixo, está localizado um servidor NAS, utilizado para armazenamento de arquivos de imagens, necessário pois a empresa trabalha com a confecção de crachás e necessita de espaço para armazenamento de imagens processadas e editadas. Na mesma prateleira, ao lado, está o Modem responsável pela conexão WAN vinda da operadora de Internet, que tem a função de roteador, e será conectado ao Switch 1.
 
-Crie esboço da configuração dos racks e brackets. Explique cada um dos componentes. Você pode criar uma tabela contendo figuras dentro, ou criar uma tabela e incluí-la como imagem. Por exemplo, verifique a tabela \ref{tab1}.
-
-\input{tab1}
+Nas duas últimas unidades de espaço da rack estão os ativos de gerenciamento de energia. O Nobreak (UPS) de até 1000 Watts oferece autonomia aos ativos durante quedas de energia de curta e média duração, protege os equipamentos contra sobrecarga, curto-circuito, sobretensões etc. Por último, uma régua de tomadas (PDU) para alimentação de vários equipamentos. A PDU é uma maneira mais simples e prática para solução de alimentação dos ativos na rack, e pode ser conectada diretamente na UPS.
 
 \subsection{Encaminhamento}
 
