@@ -411,7 +411,7 @@ Após os testes executados no certificador, o técnico deve conectar o equipamen
 
 Manutenções corretivas, que são aquelas que acontecem depois que o problema ocorreu, se mostram bastante incomodas e caras, pensando nisso, evidencia-se a necessidade de um plano de manutenções preventivas. Apesar da manutenção preventiva aparentar desnecessária e cara num primeiro momento, a longo prazo ela se revela extremamente compensatória e com interessante custo-benefício. Ela evita o comprometimento da infraestrutura e faz o diagnóstico de potenciais erros antes que afetem o fluxo de trabalho organizacional.
 
-O plano de prevenção consiste em manter os equipamentos ativos, passivos e sistemas operacionais funcionando corretamente, executando diagnósticos e análises necessários. Isso inclui: diagnóstico de funcionamento de cabos ponta à ponta, atualização de sistemas operacionais e softwares dos servidores, Backup dos sistemas operacionais, verificação de avarias das tomadas de rede e eletrocalhas de PVC, checagem do estado das baterias do nobreak etc. Ao final de cada período de manutenção deve-se gerar um relatório informativo que conste um histórico de atividades realizadas, assim como os problemas e soluções encontrados. Esses relatórios contribuem para futuros diagnósticos de problemas e para transparência nos processos de auditoria.
+O plano de prevenção consiste em manter os equipamentos ativos, passivos e sistemas operacionais funcionando corretamente, executando diagnósticos e análises necessários. Isso inclui: diagnóstico de funcionamento de cabos ponta à ponta, atualização de sistemas operacionais e softwares dos servidores, Backup dos sistemas operacionais, verificação de avarias das tomadas de rede e canaletas de PVC, checagem do estado das baterias do nobreak etc. Ao final de cada período de manutenção deve-se gerar um relatório informativo que conste um histórico de atividades realizadas, assim como os problemas e soluções encontrados. Esses relatórios contribuem para futuros diagnósticos de problemas e para transparência nos processos de auditoria.
 
 Pelo fato da atividade de manutenção de prevenção envolver dedicação e mão de obra especializada, a empresa optará por contratar uma consultoria terceirizada em TI para a operação. Este é o caso de muitas empresas que preferem não alocar os próprios funcionários da empresa para as tarefas de manutenção, afim de não prejudicar a produtividade da empresa. A consultoria, além de providenciar a manutenção periódica da rede, deve contribuir para análises práticas do fluxo de trabalho interno da corporação, sugerindo aperfeiçoamentos que contribuam para as atividades empresariais.
 
@@ -421,10 +421,16 @@ No projeto deve estar prevista a expansão do número de câmeras externas de se
 
 Outros equipamentos que deverá sofrer atualização são os telefones IP. Com a instalação de um segundo Patch Panel e um segundo Switch, estes equipamentos deverão possuir um cabeamento horizontal dedicado, e posteriormente serão conectados no segundo servidor PABX dedicado. Como mostra a topologia (Figura \ref{topologia}) esses equipamentos foram conectados em conjunto com um terminal (PC) através de um mesmo cabo UTP.
 
-Para estas novas expansões não serão necessárias trocas de eletrocalhas, pois no projeto está prevista, propositalmente, a instalação de eletrocalhas largas o suficiente para acomodar estas futuras expansões de lançamentos de novos cabos UTP. Já para a descida de cabos nas paredes, será precisa a instalação de novas eletrocalhas de PVC.
+Para estas novas expansões não serão necessárias trocas de eletrocalhas, pois no projeto está prevista, propositalmente, a instalação de eletrocalhas largas o suficiente para acomodar estas futuras expansões de lançamentos de novos cabos UTP. Já para a descida de cabos nas paredes, será precisa a instalação de novas canaletas de PVC.
 
 \section{Risco}
-Enumerar e explicar os riscos do projeto.
+
+\begin{enumerate}
+	\item Eletrocalhas: há corredores com abertura para porta, como mostra na planta original (Figura \ref{planta-atual}) entre as áreas de: suporte, atendimento e recepção. É possível que alguma obra estrutural na construção seja necessária para acomodar as eletrocalhas;
+	\item Área externa: A área de manutenção da organização se encontra desmembrada da construção principal, portanto há necessidade de passagem de eletroduto de PVC para proteção do cabeamento transportado à essa área de trabalho;
+	\item Sala de Telecomunicações: vale salientar que na área de acomodação da Rack (ver Figura \ref{planta-atual}) não há porta para acesso, há apenas uma abertura para adentrar o espaço. Devido ao ruído dos equipamentos, bem como para protegê-los, seja necessária a instalação de uma porta de vidro temperado. Conforme recomenda as normas EIA/TIA 569 B, uma das especificações para a sala de telecomunicações é: porta com largura mínima de 90cm e 200cm de altura com abertura voltada para fora, com chaveamento somente pelo lado de fora \cite{senai2012};
+\end{enumerate}
+
 
 \section{Orçamento}
 Crie uma relação de orçamentos baseado na seções anteriores.
