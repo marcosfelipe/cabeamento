@@ -265,7 +265,7 @@ Há também uma área externa, desprendida da construção principal, a sala de 
 	\includegraphics[width=\textwidth]{planta-atual}
 	\caption{Planta Atual}
 	\label{planta-atual}
-\end{figure}
+\end{figure}\newpage
 
 \section{Planta Lógica - Elementos estruturados}
 
@@ -281,13 +281,13 @@ Pegando como base a planta física (Figura \ref{planta-atual}), esboçamos sobre
 
 \subsection{Topologia}
 
-Segundo \cite{senai2012} "O cabeamento estruturado adotou como padrão a topologia estrela, em que
+O cabeamento estruturado adotou como padrão a topologia estrela, em que
 cada tomada de telecomunicação localizada junto ao usuário, deverá estar ligada
 a um ponto central que fará a comunicação com a rede de computadores interna
-da empresa e à Internet".
+da empresa e à Internet \cite{senai2012}.
 
-Na topologia da Figura \ref{topologia} cada retângulo representa uma sala (Work Area) da planta original. 
-Tratando-se de uma topologia estrela, todas as terminações da rede estão advindo da "sala de controle", centralizada na imagem (Figura \ref{topologia}). Que conta com dois Switches (Switch e Switch(1)). Nas salas de "Financeiro", "Reunião" e "Desenvolvimento" há sub-redes de topologia estrela através de um roteador (exemplo: WR$\_$Atendimento).
+Na topologia (Figura \ref{topologia}) cada retângulo representa uma sala (Work Area) da planta original. 
+Tratando-se de uma topologia estrela, todas as terminações da rede estão advindo da "sala de controle" (Sala de Telecomunicações), centralizada na topologia. Esta área conta com dois Switches (Switch e Switch(1)). Nas áreas de trabalho "Financeiro", "Reunião" e "Desenvolvimento" há sub-redes de topologia estrela através de um roteador (exemplo: WR$\_$Atendimento).
 
 
 \begin{figure}[H]
@@ -297,10 +297,10 @@ Tratando-se de uma topologia estrela, todas as terminações da rede estão advi
 	\label{topologia}
 \end{figure}
 
-As conexões entre o switch e os end-points representam o cabeamento horizontal, eles estão conectados por cabo de pares trançados de categoria 5e. Observando que a topologia deve estar em conformidade com o padrão de cabeamento estruturado: 
+As conexões entre o switch e os end-points representam o cabeamento horizontal, eles estão conectados por cabo de pares trançados (UTP) de categoria 5e. Observando que a topologia deve estar em conformidade com o padrão de cabeamento estruturado: 
 O comprimento máximo entre o segmento de cabo e entre um distribuidor de piso e a tomada de telecomuincações em uma área de trabalho é de 90 metros. As normas de cabeamento estruturado, como a NBR 14565, a ISO/IEC 11801, a ANSI/TIA-568-C.1, entre outras, permitem que os sejam utilizados no subsistema de cabemento horizontal: Cabo de pares trançados Categoria 5e ou superior de quatro pares, 100 oms, U/UTP ou F/UTP; Cabo de fibras ópticas multimode de 50/125 $\mu$m (OM3 e OM4), com duas ou quatro fibras; Cabo de fibras ópticas multimode de 62,5/125 $\mu$m (OM1 e OM2), com duas ou quatro fibras \cite{marin2014cabeamento}.
 
-Algumas terminações foram conectadas através de um IP Phone, como no "IP Phone Financeiro". Esses equipamentos disponibilizam duas portas Ethernet, uma para o switch e outra para um terminal (exemplo: PC), fazendo com que não seja necessário um cabeamento individual para esses dois equipamentos desde o switch. O modem, da sala de controle, deve receber o sinal do provedor de Internet, a conexão WAN poderá ser feita através de cabo de fibra óptica, não especificada na topologia.
+Algumas terminações foram conectadas através de um IP Phone, como no "IP Phone Financeiro". Esses equipamentos disponibilizam duas portas Ethernet, uma para o switch e outra para um terminal (exemplo: PC), fazendo com que não seja necessário um cabeamento individual para esses dois equipamentos desde o switch. Futuramente o projeto deverá sofre uma atualização para separar este tipo de conexão, isso reduzirá problemas, como falha de conexão, causados pelo IP Phone. O modem, da sala de controle, deve receber o sinal do provedor de Internet, a conexão WAN poderá ser feita através de cabo de fibra óptica, não especificada na topologia.
 
 Entre os elementos fixos na rede está também a câmera de segurança (Cam$\_$Seguranca), ela está conectada diretamente no switch principal e deverá ter o IP fixado. Os elementos móveis na rede, "Laptop Cliente1" e "Smartphone Prop1" deverão se conectar através das subredes das respectivas áreas de trabalho, mas podendo também transitar entre outras áreas como "Desenvolvimento" e "Atendimento".
 
